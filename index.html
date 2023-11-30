@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <nav class=" navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Book-shop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Log in</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Option
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <h1>Welcome to our Online Bookstore</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img class="img" src="images of books/harry porter.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Harry porter</h5>
+              <p class="card-text">R.K</p>
+              <p>price : 300 BDT</p>
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="img" src="images of books/the falts in our starts.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> The Faults in our starts </h5>
+              <p>Jhon Green</p>
+              <p>price : 250 BDT</p>
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="img" src="images of books/time machine.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Time machine</h5>
+              <p class="card-text">H.G weels</p>
+              <p>price : 350 BDT</p>
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="img" src="images of books/it starts with us.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">It stars with us</h5>
+              <p class="card-text">Collen Hoover</p>
+              <p>price : 250 BDT</p>
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img class="img" src="images of books/it ends with us.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">It Ends with us</h5>
+                <p class="card-text">Collen Hoover</p>
+                <p>price : 250 BDT</p>
+                <button type="button" class="btn btn-danger">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="img" src="images of books/one last gift.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">One Last Gift</h5>
+                <p class="card-text">Emly stone</p>
+                <p>price : 200 BDT</p>
+                <button type="button" class="btn btn-danger">Buy Now</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+    <!-- Book List -->
+    <div id="bookList">
+        <!-- Display books from the database -->
+    </div>
+
+    <!-- User Cart -->
+    <div id="userCart">
+        <!-- Display user's cart with added books -->
+    </div>
+
+    <!-- User Information Form
+    <form id="userInfoForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="submitUserInfo()">Submit</button>
+    </form>
+
+    <!-- Display User Information -->
+    <div id="userInformation">
+        <!-- Display user information here -->
+    </div> -->
+
+    <script src="api.php"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
